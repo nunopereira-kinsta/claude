@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How We Work Together</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #fdf0e9;
+    color: #1a1a1a;
+    padding: 40px 60px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .logo {
+    width: 56px;
+    height: 56px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .logo::after {
+    content: '';
+    width: 20px;
+    height: 28px;
+    border: 4px solid #e85d2a;
+    border-radius: 4px;
+    display: block;
+  }
+  .header-divider {
+    width: 3px;
+    height: 40px;
+    background: #e85d2a;
+    border-radius: 2px;
+  }
+  .header h1 {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+  }
+
+  /* Top row cards */
+  .top-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .card {
+    background: #fff;
+    border: 2px solid #e85d2a;
+    border-radius: 16px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card h2 {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 24px;
+  }
+
+  /* Orbit diagram */
+  .orbit-container {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto 16px;
+  }
+  .orbit-ring {
+    position: absolute;
+    border: 1.5px solid #e0d0c8;
+    border-radius: 50%;
+  }
+  .orbit-ring.outer {
+    width: 280px;
+    height: 280px;
+    top: 20px;
+    left: 20px;
+  }
+  .orbit-ring.inner {
+    width: 180px;
+    height: 180px;
+    top: 70px;
+    left: 70px;
+  }
+  .orbit-center {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 100px;
+    left: 100px;
+    background: radial-gradient(circle, #fce8e0 0%, #fdf0e9 100%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .orbit-center .label-main {
+    font-size: 14px;
+    font-weight: 800;
+    color: #e85d2a;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .orbit-center .label-sub {
+    font-size: 9px;
+    color: #888;
+    line-height: 1.4;
+    margin-top: 2px;
+  }
+
+  /* Pill tags */
+  .pill {
+    display: inline-block;
+    background: #fff;
+    border: 1.5px solid #ddd;
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    position: absolute;
+  }
+  .pill.red { color: #e85d2a; }
+  .pill.blue { color: #2a4de8; }
+  .pill .sub {
+    font-size: 9px;
+    font-weight: 400;
+    color: #888;
+    display: block;
+    margin-top: 1px;
+  }
+
+  /* Content-Led positions */
+  .orbit-container .pill-perf-mkt {
+    top: 0;
+    left: 80px;
+  }
+  .orbit-container .pill-design {
+    top: 100px;
+    right: -20px;
+  }
+  .orbit-container .pill-partnerships {
+    top: 90px;
+    left: -40px;
+  }
+  .orbit-container .pill-revops {
+    bottom: 30px;
+    left: -10px;
+  }
+  .orbit-container .pill-affiliates {
+    bottom: 30px;
+    right: 10px;
+  }
+  .orbit-container .pill-salesdev {
+    bottom: -25px;
+    left: 110px;
+  }
+
+  /* Company-Wide positions */
+  .orbit-container .pill-sales {
+    top: 0;
+    left: 130px;
+  }
+  .orbit-container .pill-prod-design {
+    top: 80px;
+    left: -30px;
+  }
+  .orbit-container .pill-acct-mgmt {
+    top: 80px;
+    right: -40px;
+  }
+  .orbit-container .pill-sales-dev2 {
+    top: 185px;
+    left: -20px;
+  }
+  .orbit-container .pill-cust-success {
+    top: 185px;
+    right: -50px;
+  }
+  .orbit-container .pill-finance {
+    bottom: -5px;
+    left: 50px;
+  }
+  .orbit-container .pill-development {
+    bottom: -5px;
+    right: 20px;
+  }
+
+  /* Example bar */
+  .example-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid #eee;
+    padding-top: 16px;
+    margin-top: 8px;
+  }
+  .example-badge {
+    background: #fef0ec;
+    color: #e85d2a;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+  .example-bar span {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  /* Cross-Functional Section */
+  .cross-section {
+    background: #fff;
+    border: 2px solid #e85d2a;
+    border-radius: 16px;
+    padding: 32px;
+  }
+  .cross-section > h2 {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 24px;
+  }
+  .cross-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+  .cross-card {
+    border-left: 3px solid #e85d2a;
+    padding-left: 20px;
+  }
+  .cross-card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .cross-card p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .tag {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 14px;
+    border: 1.5px solid #ddd;
+    background: #fff;
+  }
+  .tag.red { color: #e85d2a; }
+  .tag.blue { color: #2a4de8; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <div class="logo"></div>
+  <div class="header-divider"></div>
+  <h1>How We Work Together</h1>
+</div>
+
+<!-- Top Row -->
+<div class="top-row">
+
+  <!-- Content-Led Campaigns -->
+  <div class="card">
+    <h2>Content-Led Campaigns</h2>
+    <div class="orbit-container">
+      <div class="orbit-ring outer"></div>
+      <div class="orbit-ring inner"></div>
+      <div class="orbit-center">
+        <span class="label-main">CONTENT</span>
+        <span class="label-sub">Editorial &middot;<br>Multilingual &middot;<br>Product Mktg &middot;<br>Customer Mktg</span>
+      </div>
+      <div class="pill red pill-perf-mkt">Performance Marketing<span class="sub">SEO &middot; Demand Gen &middot; Paid Media</span></div>
+      <div class="pill blue pill-design">Design &amp; Martech</div>
+      <div class="pill red pill-partnerships">Partnerships<br>&amp; Events</div>
+      <div class="pill blue pill-revops">RevOps</div>
+      <div class="pill blue pill-affiliates">Affiliates</div>
+      <div class="pill blue pill-salesdev">Sales Dev</div>
+    </div>
+    <div class="example-bar">
+      <div class="example-badge">EXAMPLE</div>
+      <span>Agency Growth Series</span>
+    </div>
+  </div>
+
+  <!-- Company-Wide Campaigns -->
+  <div class="card">
+    <h2>Company-Wide Campaigns</h2>
+    <div class="orbit-container">
+      <div class="orbit-ring outer"></div>
+      <div class="orbit-ring inner"></div>
+      <div class="orbit-center">
+        <span class="label-main">MARKETING</span>
+      </div>
+      <div class="pill blue pill-sales">Sales</div>
+      <div class="pill blue pill-prod-design">Product Design</div>
+      <div class="pill blue pill-acct-mgmt">Account Mgmt</div>
+      <div class="pill blue pill-sales-dev2">Sales Dev</div>
+      <div class="pill blue pill-cust-success">Customer Success</div>
+      <div class="pill blue pill-finance">Finance</div>
+      <div class="pill blue pill-development">Development</div>
+    </div>
+    <div class="example-bar">
+      <div class="example-badge">EXAMPLE</div>
+      <span>Black Friday</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- Cross-Functional Work -->
+<div class="cross-section">
+  <h2>Cross-Functional Work</h2>
+  <div class="cross-cards">
+
+    <div class="cross-card">
+      <h3>ABM Alignment</h3>
+      <p>Shared target accounts, coordinated outbound and paid media campaigns.</p>
+      <div class="tag-row">
+        <span class="tag red">Paid Media</span>
+        <span class="tag red">Demand Gen</span>
+        <span class="tag blue">Sales Dev</span>
+        <span class="tag blue">Sales</span>
+      </div>
+      <div class="example-bar">
+        <div class="example-badge">EXAMPLE</div>
+        <span>Abandoned Signups</span>
+      </div>
+    </div>
+
+    <div class="cross-card">
+      <h3>New Feature Rollouts</h3>
+      <p>Coordinated launches with messaging, competitive positioning, and promotional assets.</p>
+      <div class="tag-row">
+        <span class="tag red">Product Mktg</span>
+        <span class="tag red">Editorial</span>
+        <span class="tag blue">Development</span>
+        <span class="tag blue">Product Design</span>
+      </div>
+      <div class="example-bar">
+        <div class="example-badge">EXAMPLE</div>
+        <span>SSO Release</span>
+      </div>
+    </div>
+
+    <div class="cross-card">
+      <h3>Customer Expansion &amp; Reactivation</h3>
+      <p>Re-engaging former customers and expanding high-potential accounts.</p>
+      <div class="tag-row">
+        <span class="tag red">Demand Gen</span>
+        <span class="tag red">RevOps</span>
+        <span class="tag blue">Account Mgmt</span>
+        <span class="tag blue">Finance</span>
+      </div>
+      <div class="example-bar">
+        <div class="example-badge">EXAMPLE</div>
+        <span>Annual Winback</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
