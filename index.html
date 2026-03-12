@@ -9,78 +9,103 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
+  html, body {
+    height: 100vh;
+    overflow: hidden;
+  }
+
   body {
     font-family: 'Inter', sans-serif;
     background: #fdf0e9;
     color: #1a1a1a;
-    padding: 40px 60px;
+    padding: 2vh 3vw;
+    display: flex;
+    flex-direction: column;
   }
 
   /* Header */
   .header {
     display: flex;
     align-items: center;
-    gap: 16px;
-    margin-bottom: 32px;
+    gap: 12px;
+    margin-bottom: 1.5vh;
+    flex-shrink: 0;
   }
   .logo {
-    width: 56px;
-    height: 56px;
+    width: 42px;
+    height: 42px;
     background: #1a1a1a;
-    border-radius: 12px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
   }
   .logo::after {
     content: '';
-    width: 20px;
-    height: 28px;
-    border: 4px solid #e85d2a;
-    border-radius: 4px;
+    width: 16px;
+    height: 22px;
+    border: 3px solid #e85d2a;
+    border-radius: 3px;
     display: block;
   }
   .header-divider {
     width: 3px;
-    height: 40px;
+    height: 32px;
     background: #e85d2a;
     border-radius: 2px;
   }
   .header h1 {
-    font-size: 32px;
+    font-size: clamp(20px, 2.2vw, 32px);
     font-weight: 900;
     letter-spacing: -0.5px;
+  }
+
+  /* Main layout */
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    min-height: 0;
   }
 
   /* Top row cards */
   .top-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    margin-bottom: 24px;
+    gap: 1.5vw;
+    flex: 1;
+    min-height: 0;
   }
 
   .card {
     background: #fff;
     border: 2px solid #e85d2a;
-    border-radius: 16px;
-    padding: 32px;
-    position: relative;
-    overflow: hidden;
+    border-radius: 14px;
+    padding: 1.5vh 2vw;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
   }
   .card h2 {
-    font-size: 22px;
+    font-size: clamp(14px, 1.4vw, 22px);
     font-weight: 900;
-    margin-bottom: 24px;
+    margin-bottom: 1vh;
+    flex-shrink: 0;
   }
 
   /* Orbit diagram */
+  .orbit-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+  }
   .orbit-container {
     position: relative;
-    width: 320px;
-    height: 320px;
-    margin: 0 auto 16px;
+    width: min(26vw, 36vh);
+    height: min(26vw, 36vh);
   }
   .orbit-ring {
     position: absolute;
@@ -88,23 +113,23 @@
     border-radius: 50%;
   }
   .orbit-ring.outer {
-    width: 280px;
-    height: 280px;
-    top: 20px;
-    left: 20px;
+    width: 87.5%;
+    height: 87.5%;
+    top: 6.25%;
+    left: 6.25%;
   }
   .orbit-ring.inner {
-    width: 180px;
-    height: 180px;
-    top: 70px;
-    left: 70px;
+    width: 56.25%;
+    height: 56.25%;
+    top: 21.875%;
+    left: 21.875%;
   }
   .orbit-center {
     position: absolute;
-    width: 120px;
-    height: 120px;
-    top: 100px;
-    left: 100px;
+    width: 37.5%;
+    height: 37.5%;
+    top: 31.25%;
+    left: 31.25%;
     background: radial-gradient(circle, #fce8e0 0%, #fdf0e9 100%);
     border-radius: 50%;
     display: flex;
@@ -114,14 +139,14 @@
     text-align: center;
   }
   .orbit-center .label-main {
-    font-size: 14px;
+    font-size: clamp(9px, 1vw, 14px);
     font-weight: 800;
     color: #e85d2a;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
   .orbit-center .label-sub {
-    font-size: 9px;
+    font-size: clamp(6px, 0.6vw, 9px);
     color: #888;
     line-height: 1.4;
     margin-top: 2px;
@@ -133,8 +158,8 @@
     background: #fff;
     border: 1.5px solid #ddd;
     border-radius: 20px;
-    padding: 5px 14px;
-    font-size: 12px;
+    padding: 3px 10px;
+    font-size: clamp(8px, 0.8vw, 12px);
     font-weight: 600;
     white-space: nowrap;
     position: absolute;
@@ -142,90 +167,53 @@
   .pill.red { color: #e85d2a; }
   .pill.blue { color: #2a4de8; }
   .pill .sub {
-    font-size: 9px;
+    font-size: clamp(6px, 0.55vw, 9px);
     font-weight: 400;
     color: #888;
     display: block;
     margin-top: 1px;
   }
 
-  /* Content-Led positions */
-  .orbit-container .pill-perf-mkt {
-    top: 0;
-    left: 80px;
-  }
-  .orbit-container .pill-design {
-    top: 100px;
-    right: -20px;
-  }
-  .orbit-container .pill-partnerships {
-    top: 90px;
-    left: -40px;
-  }
-  .orbit-container .pill-revops {
-    bottom: 30px;
-    left: -10px;
-  }
-  .orbit-container .pill-affiliates {
-    bottom: 30px;
-    right: 10px;
-  }
-  .orbit-container .pill-salesdev {
-    bottom: -25px;
-    left: 110px;
-  }
+  /* Content-Led positions (percentage-based) */
+  .orbit-container .pill-perf-mkt { top: -2%; left: 25%; }
+  .orbit-container .pill-design { top: 31%; right: -8%; }
+  .orbit-container .pill-partnerships { top: 26%; left: -14%; }
+  .orbit-container .pill-revops { bottom: 8%; left: -5%; }
+  .orbit-container .pill-affiliates { bottom: 8%; right: 2%; }
+  .orbit-container .pill-salesdev { bottom: -10%; left: 34%; }
 
-  /* Company-Wide positions */
-  .orbit-container .pill-sales {
-    top: 0;
-    left: 130px;
-  }
-  .orbit-container .pill-prod-design {
-    top: 80px;
-    left: -30px;
-  }
-  .orbit-container .pill-acct-mgmt {
-    top: 80px;
-    right: -40px;
-  }
-  .orbit-container .pill-sales-dev2 {
-    top: 185px;
-    left: -20px;
-  }
-  .orbit-container .pill-cust-success {
-    top: 185px;
-    right: -50px;
-  }
-  .orbit-container .pill-finance {
-    bottom: -5px;
-    left: 50px;
-  }
-  .orbit-container .pill-development {
-    bottom: -5px;
-    right: 20px;
-  }
+  /* Company-Wide positions (percentage-based) */
+  .orbit-container .pill-sales { top: -2%; left: 40%; }
+  .orbit-container .pill-prod-design { top: 24%; left: -12%; }
+  .orbit-container .pill-acct-mgmt { top: 24%; right: -14%; }
+  .orbit-container .pill-sales-dev2 { top: 57%; left: -8%; }
+  .orbit-container .pill-cust-success { top: 57%; right: -18%; }
+  .orbit-container .pill-finance { bottom: -4%; left: 14%; }
+  .orbit-container .pill-development { bottom: -4%; right: 4%; }
 
   /* Example bar */
   .example-bar {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     border-top: 1px solid #eee;
-    padding-top: 16px;
-    margin-top: 8px;
+    padding-top: 1vh;
+    margin-top: auto;
+    flex-shrink: 0;
   }
   .example-badge {
     background: #fef0ec;
     color: #e85d2a;
-    font-size: 10px;
+    font-size: clamp(7px, 0.65vw, 10px);
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    padding: 4px 10px;
+    padding: 3px 8px;
     border-radius: 4px;
+    flex-shrink: 0;
   }
   .example-bar span {
-    font-size: 15px;
+    font-size: clamp(10px, 1vw, 15px);
     font-weight: 600;
   }
 
@@ -233,44 +221,45 @@
   .cross-section {
     background: #fff;
     border: 2px solid #e85d2a;
-    border-radius: 16px;
-    padding: 32px;
+    border-radius: 14px;
+    padding: 1.5vh 2vw;
+    flex-shrink: 0;
   }
   .cross-section > h2 {
-    font-size: 22px;
+    font-size: clamp(14px, 1.4vw, 22px);
     font-weight: 900;
-    margin-bottom: 24px;
+    margin-bottom: 1.2vh;
   }
   .cross-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
+    gap: 1.5vw;
   }
   .cross-card {
     border-left: 3px solid #e85d2a;
-    padding-left: 20px;
+    padding-left: 1vw;
   }
   .cross-card h3 {
-    font-size: 16px;
+    font-size: clamp(11px, 1.05vw, 16px);
     font-weight: 800;
-    margin-bottom: 8px;
+    margin-bottom: 0.5vh;
   }
   .cross-card p {
-    font-size: 13px;
+    font-size: clamp(9px, 0.85vw, 13px);
     color: #555;
-    line-height: 1.5;
-    margin-bottom: 14px;
+    line-height: 1.4;
+    margin-bottom: 1vh;
   }
   .tag-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 16px;
+    gap: 5px;
+    margin-bottom: 1vh;
   }
   .tag {
-    font-size: 11px;
+    font-size: clamp(8px, 0.7vw, 11px);
     font-weight: 600;
-    padding: 4px 12px;
+    padding: 2px 8px;
     border-radius: 14px;
     border: 1.5px solid #ddd;
     background: #fff;
@@ -288,25 +277,29 @@
   <h1>How We Work Together</h1>
 </div>
 
+<div class="main-content">
+
 <!-- Top Row -->
 <div class="top-row">
 
   <!-- Content-Led Campaigns -->
   <div class="card">
     <h2>Content-Led Campaigns</h2>
-    <div class="orbit-container">
-      <div class="orbit-ring outer"></div>
-      <div class="orbit-ring inner"></div>
-      <div class="orbit-center">
-        <span class="label-main">CONTENT</span>
-        <span class="label-sub">Editorial &middot;<br>Multilingual &middot;<br>Product Mktg &middot;<br>Customer Mktg</span>
+    <div class="orbit-wrapper">
+      <div class="orbit-container">
+        <div class="orbit-ring outer"></div>
+        <div class="orbit-ring inner"></div>
+        <div class="orbit-center">
+          <span class="label-main">CONTENT</span>
+          <span class="label-sub">Editorial &middot;<br>Multilingual &middot;<br>Product Mktg &middot;<br>Customer Mktg</span>
+        </div>
+        <div class="pill red pill-perf-mkt">Performance Marketing<span class="sub">SEO &middot; Demand Gen &middot; Paid Media</span></div>
+        <div class="pill blue pill-design">Design &amp; Martech</div>
+        <div class="pill red pill-partnerships">Partnerships<br>&amp; Events</div>
+        <div class="pill blue pill-revops">RevOps</div>
+        <div class="pill blue pill-affiliates">Affiliates</div>
+        <div class="pill blue pill-salesdev">Sales Dev</div>
       </div>
-      <div class="pill red pill-perf-mkt">Performance Marketing<span class="sub">SEO &middot; Demand Gen &middot; Paid Media</span></div>
-      <div class="pill blue pill-design">Design &amp; Martech</div>
-      <div class="pill red pill-partnerships">Partnerships<br>&amp; Events</div>
-      <div class="pill blue pill-revops">RevOps</div>
-      <div class="pill blue pill-affiliates">Affiliates</div>
-      <div class="pill blue pill-salesdev">Sales Dev</div>
     </div>
     <div class="example-bar">
       <div class="example-badge">EXAMPLE</div>
@@ -317,19 +310,21 @@
   <!-- Company-Wide Campaigns -->
   <div class="card">
     <h2>Company-Wide Campaigns</h2>
-    <div class="orbit-container">
-      <div class="orbit-ring outer"></div>
-      <div class="orbit-ring inner"></div>
-      <div class="orbit-center">
-        <span class="label-main">MARKETING</span>
+    <div class="orbit-wrapper">
+      <div class="orbit-container">
+        <div class="orbit-ring outer"></div>
+        <div class="orbit-ring inner"></div>
+        <div class="orbit-center">
+          <span class="label-main">MARKETING</span>
+        </div>
+        <div class="pill blue pill-sales">Sales</div>
+        <div class="pill blue pill-prod-design">Product Design</div>
+        <div class="pill blue pill-acct-mgmt">Account Mgmt</div>
+        <div class="pill blue pill-sales-dev2">Sales Dev</div>
+        <div class="pill blue pill-cust-success">Customer Success</div>
+        <div class="pill blue pill-finance">Finance</div>
+        <div class="pill blue pill-development">Development</div>
       </div>
-      <div class="pill blue pill-sales">Sales</div>
-      <div class="pill blue pill-prod-design">Product Design</div>
-      <div class="pill blue pill-acct-mgmt">Account Mgmt</div>
-      <div class="pill blue pill-sales-dev2">Sales Dev</div>
-      <div class="pill blue pill-cust-success">Customer Success</div>
-      <div class="pill blue pill-finance">Finance</div>
-      <div class="pill blue pill-development">Development</div>
     </div>
     <div class="example-bar">
       <div class="example-badge">EXAMPLE</div>
@@ -390,6 +385,8 @@
     </div>
 
   </div>
+</div>
+
 </div>
 
 </body>
