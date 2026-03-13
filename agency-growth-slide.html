@@ -18,7 +18,7 @@
     font-family: 'Inter', sans-serif;
     background: #fdf0e9;
     color: #1a1a1a;
-    padding: 2.5vh 3vw;
+    padding: 3vh 4vw;
     display: flex;
     flex-direction: column;
   }
@@ -28,42 +28,36 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 2vh;
+    margin-bottom: 2.5vh;
     flex-shrink: 0;
   }
   .logo {
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     background: #1a1a1a;
-    border-radius: 10px;
+    border-radius: 9px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .logo::after {
     content: '';
-    width: 16px;
-    height: 22px;
+    width: 14px;
+    height: 20px;
     border: 3px solid #e85d2a;
     border-radius: 3px;
     display: block;
   }
   .header-divider {
     width: 3px;
-    height: 32px;
+    height: 28px;
     background: #e85d2a;
     border-radius: 2px;
   }
   .header h1 {
-    font-size: clamp(20px, 2.2vw, 32px);
+    font-size: clamp(18px, 2vw, 28px);
     font-weight: 900;
     letter-spacing: -0.5px;
-  }
-  .header-subtitle {
-    font-size: clamp(12px, 1.1vw, 16px);
-    color: #e85d2a;
-    font-weight: 600;
-    margin-left: auto;
   }
 
   /* Main layout */
@@ -71,193 +65,194 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1.8vh;
     min-height: 0;
   }
 
-  /* Series intro row */
-  .series-row {
-    display: flex;
-    gap: 1.5vw;
+  /* Top section: series intro + quotes side by side */
+  .top-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8vw;
+    margin-bottom: 2vh;
     flex-shrink: 0;
   }
 
-  .series-card {
-    background: #fff;
-    border: 2px solid #e85d2a;
-    border-radius: 14px;
-    padding: 1.8vh 2vw;
-    flex: 1;
+  .series-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .series-card h2 {
-    font-size: clamp(14px, 1.3vw, 20px);
+  .series-intro h2 {
+    font-size: clamp(16px, 1.5vw, 24px);
     font-weight: 900;
-    margin-bottom: 0.8vh;
+    margin-bottom: 1vh;
   }
 
-  .series-card p {
+  .series-intro p {
     font-size: clamp(11px, 0.95vw, 15px);
     color: #555;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin-bottom: 1vh;
   }
 
   .series-link {
-    display: inline-block;
-    margin-top: 0.8vh;
     font-size: clamp(10px, 0.85vw, 13px);
     color: #e85d2a;
     font-weight: 700;
-    word-break: break-all;
   }
 
-  /* Three columns */
-  .three-col {
+  /* Quote cards grid */
+  .quotes-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5vw;
-    flex: 1;
-    min-height: 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8vw;
   }
 
-  .col-card {
+  .quote-card {
     background: #fff;
-    border: 2px solid #e85d2a;
-    border-radius: 14px;
-    padding: 1.8vh 1.8vw;
+    border-radius: 10px;
+    padding: 1.2vh 1vw;
     display: flex;
     flex-direction: column;
   }
 
-  .col-card-number {
+  .quote-card .quote-text {
+    font-size: clamp(9px, 0.72vw, 11px);
+    color: #1a1a1a;
+    line-height: 1.45;
+    font-style: italic;
+    flex: 1;
+  }
+
+  .quote-card .quote-author {
+    font-size: clamp(8px, 0.62vw, 10px);
+    font-weight: 700;
+    color: #e85d2a;
+    margin-top: 0.5vh;
+  }
+
+  .quote-card .quote-company {
+    font-size: clamp(7px, 0.55vw, 9px);
+    color: #999;
+    font-weight: 500;
+  }
+
+  /* Three uses: stacked rows */
+  .uses-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vh;
+    min-height: 0;
+  }
+
+  .use-row {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.4vh 2vw;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1.5vw;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .use-number {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: clamp(24px, 2.2vw, 34px);
-    height: clamp(24px, 2.2vw, 34px);
+    width: clamp(28px, 2.5vw, 40px);
+    height: clamp(28px, 2.5vw, 40px);
     background: #e85d2a;
     color: #fff;
     border-radius: 50%;
-    font-size: clamp(12px, 1vw, 16px);
+    font-size: clamp(13px, 1.1vw, 18px);
     font-weight: 800;
-    margin-bottom: 0.8vh;
     flex-shrink: 0;
   }
 
-  .col-card h3 {
-    font-size: clamp(13px, 1.2vw, 18px);
+  .use-content h3 {
+    font-size: clamp(12px, 1.05vw, 16px);
     font-weight: 800;
-    margin-bottom: 0.8vh;
+    margin-bottom: 0.3vh;
   }
 
-  .col-card p {
-    font-size: clamp(10px, 0.85vw, 14px);
-    color: #555;
-    line-height: 1.55;
-  }
-
-  .col-card ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 0.6vh;
-  }
-
-  .col-card ul li {
+  .use-content p {
     font-size: clamp(10px, 0.82vw, 13px);
     color: #555;
-    line-height: 1.5;
-    padding: 2px 0;
-    padding-left: 14px;
-    position: relative;
+    line-height: 1.45;
   }
 
-  .col-card ul li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 7px;
-    width: 6px;
-    height: 6px;
-    background: #e85d2a;
-    border-radius: 50%;
-  }
-
-  /* Email example */
-  .email-example {
-    margin-top: auto;
+  .use-example {
     background: #fdf0e9;
     border-radius: 8px;
     padding: 1vh 1.2vw;
-    font-size: clamp(9px, 0.78vw, 12px);
-    color: #333;
-    line-height: 1.5;
-    font-style: italic;
+    max-width: 26vw;
+    flex-shrink: 0;
   }
 
-  .email-example-label {
-    font-style: normal;
+  .use-example-label {
     font-weight: 700;
     color: #e85d2a;
     text-transform: uppercase;
-    font-size: clamp(8px, 0.65vw, 10px);
+    font-size: clamp(7px, 0.58vw, 9px);
     letter-spacing: 0.5px;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
 
-  /* Pill tags */
-  .pill {
-    display: inline-block;
-    border: 1.5px solid #e85d2a;
-    color: #e85d2a;
-    border-radius: 20px;
-    padding: 2px 10px;
-    font-size: clamp(9px, 0.75vw, 12px);
-    font-weight: 700;
-    margin-right: 4px;
-    margin-top: 4px;
+  .use-example p {
+    font-size: clamp(9px, 0.72vw, 12px);
+    color: #333;
+    font-style: italic;
+    line-height: 1.45;
   }
 
-  .pill.muted {
-    border-color: #ccc;
-    color: #888;
-  }
-
-  /* Bottom bar */
-  .bottom-bar {
+  /* Next steps */
+  .next-steps {
     display: flex;
     align-items: center;
-    gap: 1.5vw;
+    gap: 2vw;
+    margin-top: 2vh;
     flex-shrink: 0;
-    background: #fff;
-    border: 2px solid #e85d2a;
-    border-radius: 14px;
-    padding: 1.4vh 2vw;
   }
 
-  .bottom-bar .action-item {
+  .next-steps-label {
+    font-size: clamp(11px, 0.95vw, 14px);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #e85d2a;
+    flex-shrink: 0;
+  }
+
+  .step {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: clamp(10px, 0.9vw, 14px);
+    font-size: clamp(10px, 0.85vw, 13px);
     font-weight: 600;
     color: #1a1a1a;
   }
 
-  .action-icon {
+  .step-num {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: clamp(22px, 1.8vw, 28px);
-    height: clamp(22px, 1.8vw, 28px);
+    width: clamp(20px, 1.6vw, 24px);
+    height: clamp(20px, 1.6vw, 24px);
     background: #fef0ec;
-    border-radius: 6px;
-    font-size: clamp(12px, 1vw, 16px);
+    color: #e85d2a;
+    border-radius: 50%;
+    font-size: clamp(10px, 0.8vw, 13px);
+    font-weight: 800;
     flex-shrink: 0;
   }
 
-  .bottom-divider {
+  .steps-divider {
     width: 1.5px;
-    height: 28px;
+    height: 22px;
     background: #e0d0c8;
     flex-shrink: 0;
   }
@@ -269,86 +264,100 @@
 <div class="header">
   <div class="logo"></div>
   <div class="header-divider"></div>
-  <h1>Agency Growth Insights — For Your Conversations</h1>
+  <h1>Agency Growth Insights</h1>
 </div>
 
 <div class="main-content">
 
-<!-- Series intro -->
-<div class="series-row">
-  <div class="series-card">
+<!-- Top: Series intro + founder quotes -->
+<div class="top-section">
+  <div class="series-intro">
     <h2>"They Figured It Out (Mostly)"</h2>
-    <p>Four agency founders who are Kinsta customers and partners sharing how they've actually grown — what worked, what didn't, and what they'd do differently. Real conversations, not polished marketing.</p>
+    <p>Four agency founders who are Kinsta customers and partners sharing how they've actually grown. What worked, what didn't, and what they'd do differently.</p>
     <span class="series-link">kinsta.com/agency-growth-insights/</span>
+  </div>
+
+  <div class="quotes-grid">
+    <div class="quote-card">
+      <div class="quote-text">"We were growing fast... and not stopping to think about whether this is what we actually wanted."</div>
+      <div class="quote-author">Tim Kelsey</div>
+      <div class="quote-company">Pronto · 1,000+ clients</div>
+    </div>
+    <div class="quote-card">
+      <div class="quote-text">"Clients started asking to stay. Not because something broke, but because they wanted a long-term partner."</div>
+      <div class="quote-author">Vin Thomas</div>
+      <div class="quote-company">Fixel</div>
+    </div>
+    <div class="quote-card">
+      <div class="quote-text">"We accidentally found our niche through one client acquisition."</div>
+      <div class="quote-author">Agency Founder</div>
+      <div class="quote-company">From the series</div>
+    </div>
+    <div class="quote-card">
+      <div class="quote-text">"We lose more deals to 'no decision' than to any competitor."</div>
+      <div class="quote-author">Agency Founder</div>
+      <div class="quote-company">E-commerce focused</div>
+    </div>
   </div>
 </div>
 
 <!-- Three ways to use it -->
-<div class="three-col">
+<div class="uses-section">
 
-  <!-- 1. Emails -->
-  <div class="col-card">
-    <div class="col-card-number">1</div>
-    <h3>In Your Emails</h3>
-    <p>Before calls, after calls, or at any point in the conversation. Complements what you're already sending — adds something genuinely useful, not just something transactional.</p>
-    <ul>
-      <li>Use throughout the year whenever it fits</li>
-      <li>Tweak the wording so it sounds like you</li>
-    </ul>
-    <div class="email-example">
-      <div class="email-example-label">Example</div>
-      "Hey [name], came across this and thought of you — four agency founders talking honestly about what actually worked for them growth-wise. No pitch, just real conversations. [link]"
+  <div class="use-row">
+    <div class="use-number">1</div>
+    <div class="use-content">
+      <h3>In Your Emails</h3>
+      <p>Before calls, after calls, or at any point in the conversation. Complements what you're already sending. Adds something genuinely useful, not just something transactional. Use it whenever it fits throughout the year.</p>
+    </div>
+    <div class="use-example">
+      <div class="use-example-label">Example</div>
+      <p>"Hey [name], came across this and thought of you. Four agency founders talking honestly about what actually worked for them growth-wise. No pitch, just real conversations. [link]"</p>
     </div>
   </div>
 
-  <!-- 2. LinkedIn -->
-  <div class="col-card">
-    <div class="col-card-number">2</div>
-    <h3>LinkedIn Posts</h3>
-    <p>Pre-written posts ready to go. Copy, adjust the wording so it sounds like you, and publish. Pick whichever posts feel right — just make sure to post the announcement one.</p>
-    <ul>
-      <li>Schedule across March &amp; April</li>
-      <li>Adjust the copy to match your voice</li>
-      <li>We can look into boosting your posts to agency owner audiences</li>
-    </ul>
-    <div style="margin-top: auto; padding-top: 0.6vh;">
-      <span class="pill">Post 1 — Announcement</span>
-      <span class="pill muted">Post 2</span>
-      <span class="pill muted">Post 3</span>
-      <span class="pill muted">Post 4</span>
-      <span class="pill muted">Post 5</span>
+  <div class="use-row">
+    <div class="use-number">2</div>
+    <div class="use-content">
+      <h3>LinkedIn Posts</h3>
+      <p>Pre-written posts ready to go. Copy, adjust the wording so it sounds like you, and publish. Pick whichever ones feel right. Schedule them whenever works for you across March and April. We can look into boosting your posts to agency owner audiences.</p>
+    </div>
+    <div class="use-example">
+      <div class="use-example-label">What you get</div>
+      <p>A Google Doc with ready-to-use posts. Make sure to publish the announcement post first, then choose from the rest.</p>
     </div>
   </div>
 
-  <!-- 3. In Calls -->
-  <div class="col-card">
-    <div class="col-card-number">3</div>
-    <h3>Bring It Up in Calls</h3>
-    <p>If you're talking to an agency owner, you can drop it in naturally:</p>
-    <div class="email-example" style="margin-top: 1vh;">
-      <div class="email-example-label">Example</div>
-      "Actually, we just did this series with a few agencies — you might find it interesting."
+  <div class="use-row">
+    <div class="use-number">3</div>
+    <div class="use-content">
+      <h3>Bring It Up in Calls</h3>
+      <p>If you're talking to an agency owner, you can drop it in naturally. It adds something to the conversation and shows you bring value beyond the product.</p>
     </div>
-    <p style="margin-top: 1.2vh;">It adds something to the conversation and positions you as someone who brings value beyond the product.</p>
+    <div class="use-example">
+      <div class="use-example-label">Example</div>
+      <p>"Actually, we just did this series with a few agencies, you might find it interesting."</p>
+    </div>
   </div>
 
 </div>
 
-<!-- Bottom bar: next steps -->
-<div class="bottom-bar">
-  <div class="action-item">
-    <span class="action-icon">1</span>
+<!-- Next Steps -->
+<div class="next-steps">
+  <span class="next-steps-label">Next Steps</span>
+  <div class="step">
+    <span class="step-num">1</span>
     Publish announcement post by Friday
   </div>
-  <div class="bottom-divider"></div>
-  <div class="action-item">
-    <span class="action-icon">2</span>
-    Let me know once it's up — we can look into boosting it
+  <div class="steps-divider"></div>
+  <div class="step">
+    <span class="step-num">2</span>
+    Let me know once it's up so we can look into boosting it
   </div>
-  <div class="bottom-divider"></div>
-  <div class="action-item">
-    <span class="action-icon">3</span>
-    Links, posts &amp; email example coming to Slack after this
+  <div class="steps-divider"></div>
+  <div class="step">
+    <span class="step-num">3</span>
+    Schedule 2 to 3 more posts through March and April
   </div>
 </div>
 
