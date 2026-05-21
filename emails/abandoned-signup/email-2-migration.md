@@ -22,8 +22,6 @@ It doesn't have to. Here's how a Kinsta migration works:
 
 Your existing site is never touched until you approve. That's how we complete 1,100+ migrations a month without downtime, whether you're moving one site or many.
 
-Any malware found on your current site gets cleaned up during the process.
-
 The migration takes a day. Putting it off is what costs you.
 
 [ Complete Your Signup ]
