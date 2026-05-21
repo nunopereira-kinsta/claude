@@ -18,8 +18,8 @@ And these aren't the well-behaved crawlers you're used to. They bypass cache, hi
 
 We analyzed 10 billion requests across our WordPress hosting infrastructure to understand what changed.
 
-The findings are in our AI & Bot Traffic Report, covering what's driving the surge, how bots are actually behaving in the wild, and how to think about your response.
+The findings are in our AI & Bot Traffic Report, covering what's driving the surge, how bots are actually behaving in the wild, and what to do about it.
 
 [CTA: Read the report]
 
-P.S. We recently launched Bot Protection, a feature on every Kinsta plan that gives you direct controls for exactly this problem.
+P.S. We recently launched Bot Protection, a feature that gives you direct controls for exactly this problem.
