@@ -16,8 +16,10 @@ Hi [First name],
 
 And these aren't the well-behaved crawlers you're used to. They're hitting pages that require server work, getting trapped in query-string loops, and adding costs that don't show up until your bill does.
 
-To understand what changed, we analyzed 10 billion requests across our WordPress hosting infrastructure. The findings are in our AI & Bot Traffic Report, a free resource covering what's driving the surge, how bots are actually behaving in the wild, and how to think about your response.
+We analyzed 10 billion requests across our WordPress hosting infrastructure to understand what changed.
+
+The findings are in our AI & Bot Traffic Report, covering what's driving the surge, how bots are actually behaving in the wild, and how to think about your response.
 
 [CTA: Read the report]
 
-P.S. We recently launched Bot Protection, a free feature on every Kinsta plan that gives you direct controls for exactly this problem. More on that soon.
+P.S. We recently launched Bot Protection, a feature on every Kinsta plan that gives you direct controls for exactly this problem.
