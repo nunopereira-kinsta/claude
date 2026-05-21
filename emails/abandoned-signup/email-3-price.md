@@ -13,18 +13,14 @@ Hi {first_name},
 
 We're not going to pretend Kinsta is the cheapest option out there.
 
-Andrew Geraci, founder and Director of Photography at Project Preservation, a film and media nonprofit, felt the same way about the pricing.
+Andrew Geraci, founder of Project Preservation, a film preservation organization, felt the same way about the pricing.
 
-"I think one of the biggest hurdles for small businesses is choosing performance vs. the cost."
+"The price of Kinsta was a bit of a sticker shock when I first saw it and made me slightly apprehensive at first."
 
 Before switching, his previous host had the site down up to 30% of each month, costing thousands in lost SEO rankings over 7 years. After moving to Kinsta, load times dropped from 5-7 seconds to under 2.
 
-"It's worth every penny. Kinsta is the hosting service we all deserve."
+"That quickly faded after I saw the value that I received via reliability was the value that I was paying. It's worth every penny."
 
-Here's what that price gets you: every plan includes $300+ in built-in tools that most hosts charge separately for, starting with enterprise DDoS protection, CDN, and automated backups.
-
-When something comes up, you can chat with a WordPress expert in 120 seconds.
+Here's what that price gets you: $300+ in built-in tools, covering enterprise DDoS protection, CDN, and automated backups. Support works the same way: chat with a WordPress expert in 120 seconds.
 
 [ View Kinsta Plans ]
-
-P.S. Want to talk through plans before committing? Our team is in the live chat on the site.
