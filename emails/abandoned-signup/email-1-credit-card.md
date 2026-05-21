@@ -19,7 +19,7 @@ Two layers of protection: Not happy in the first 30 days? Cancel and pay nothing
 
 A real engineer in the dashboard: The moment you finish signing up, a Kinsta expert is available inside the app to help you get set up. No bots, no ticketing system.
 
-In 2026, Kinsta ranked #1 in WordPress hosting on G2 — the platform where over 100 million software buyers go to read real customer reviews before making a decision. We beat 1,460 other hosting products to get there. The year before, we were ranked 8th.
+In 2026, Kinsta ranked #1 in WordPress hosting on G2, the platform where over 100 million software buyers go to read real customer reviews before making a decision. We beat 1,460 other hosting products to get there. The year before, we were ranked 8th.
 
 230,000 businesses across 128 countries are already on the platform. We accept cards from anywhere.
 
