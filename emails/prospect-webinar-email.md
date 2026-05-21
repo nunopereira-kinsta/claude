@@ -12,9 +12,7 @@
 
 Hi [First name],
 
-1 in 31 visits to the average website is now an AI bot. A year ago it was 1 in 200.
-
-Our AI & Bot Traffic Report digs into what's behind that shift, what it means for performance and costs, and how to manage it.
+Our AI & Bot Traffic Report is out. The short version: the problem is bigger and faster-moving than most people realize.
 
 If you want to understand which traffic is worth keeping, which is just adding cost, and what a sensible response looks like, join us live.
 
