@@ -11,11 +11,17 @@
 
 Hi {first_name},
 
-If you've been looking for something better than your current host, you found it.
+Most people find Kinsta when they're tired of slow sites, unreliable uptime, or support that takes days to respond.
 
-1 in 4 Kinsta customers sign up just to take a look inside, and that's exactly what the trial is there for. The first 30 days give you full access to everything. Not the right fit? Cancel and pay nothing. Still undecided after month one? A 30-day money-back guarantee covers you through month two as well.
+If that sounds familiar, here's what finishing the signup gets you:
 
-In 2026, Kinsta ranked #1 out of 1,460 hosting providers on G2, a comparison platform based on real customer reviews. From the moment you finish signing up, you can chat with a WordPress expert in the dashboard.
+✅ 30 days of full access, with every feature included
+✅ Not the right fit? Cancel before day 30 and pay nothing
+✅ Still undecided after month one? A 30-day money-back guarantee has you covered
+
+In 2026, Kinsta ranked #1 out of 1,460 hosting providers on G2, a comparison platform based on real customer reviews.
+
+From the moment you sign up, a WordPress expert is in the live chat.
 
 [ Complete Your Signup ]
 
