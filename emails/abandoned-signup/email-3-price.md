@@ -21,6 +21,6 @@ Before switching, his previous host had the site down up to 30% of each month, c
 
 "(Price) quickly faded after I saw the value that I received via reliability was the value that I was paying. It's worth every penny."
 
-Not sure if this is right for you? Chat with a WordPress expert inside the app after you sign up. They respond in 120 seconds.
+Still not sure if Kinsta is right for you? Chat with a WordPress expert inside the app after you sign up. They respond in 120 seconds.
 
 [ View Kinsta Plans ]

@@ -13,7 +13,7 @@ Hi {first_name},
 
 Most people find Kinsta when they're tired of slow sites, unreliable uptime, or support that takes days to respond.
 
-Here's what you're joining: Kinsta is #1 out of 1,460 WordPress hosting providers on G2, based on real customer reviews.
+Here's what you're joining: Kinsta is #1 out of 388 WordPress hosting providers on G2, based on real customer reviews.
 
 And finishing the form doesn't lock you in:
 
