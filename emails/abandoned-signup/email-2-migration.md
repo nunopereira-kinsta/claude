@@ -9,24 +9,20 @@
 
 ---
 
-Most people stay with a host they've outgrown because switching feels complicated.
+Hi {first_name},
 
-It isn't. Not when someone else does it for you.
+Most people stay with a host they've outgrown for one reason: switching feels risky.
 
-Here's how Kinsta migrations actually work: our team migrates your site to a staging environment first. Your current site keeps running, untouched. You test the new version, check the performance, confirm everything looks right. Only when you approve it do we go live.
+It doesn't have to. Here's how a Kinsta migration works:
 
-Your existing site is never touched without your say-so. That's how we handle 1,100+ migrations every month with zero downtime.
+1. We migrate your site to a staging environment. Your live site keeps running.
+2. You review it and confirm everything looks right.
+3. Once you say so, we make it live.
 
-A few more things:
+Your existing site is never touched until you approve. We complete 1,100+ migrations a month this way, in a single day, whether you're moving one site or many. Migrations are included in every plan, and any malware on your current site gets cleaned up in the process.
 
-Included in every plan: Migrations are handled by our expert team. Not automated. Actual humans who have done this thousands of times.
-
-Fast: Most migrations are complete in a single working day. Expedited ones in as little as 8 hours.
-
-Better on arrival: Sites typically see up to 200% speed improvements after moving to Kinsta. The migration isn't just a move. It's an upgrade.
-
-One less problem: Any malware found on your current site is removed during the migration, at no charge.
+The migration takes a day. Putting it off is what costs you.
 
 [ Complete Your Signup ]
 
-P.S. Questions about your specific setup? A Kinsta engineer is in the chat at kinsta.com right now.
+P.S. Questions about your setup? Our team is in the live chat and can help before you sign up.
