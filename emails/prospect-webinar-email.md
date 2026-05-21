@@ -12,7 +12,7 @@
 
 Hi [First name],
 
-Our AI & Bot Traffic Report is out. The short version: the problem is bigger and faster-moving than most people realize.
+Our AI & Bot Traffic Report is out. The short version: AI bot traffic is up 6x in a year, and most of those visits are hitting your server directly.
 
 If you want to understand which traffic is worth keeping, which is just adding cost, and what a sensible response looks like, join us live.
 
