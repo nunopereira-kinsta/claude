@@ -5,7 +5,7 @@
 
 ---
 
-**Subject:** 1 in 4 Kinsta customers signed up just to look around 👀
+**Subject:** Still putting up with slow sites and slow support?
 **Preview:** 30 days to explore everything. No commitment needed.
 
 ---
