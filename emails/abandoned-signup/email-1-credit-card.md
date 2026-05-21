@@ -6,7 +6,7 @@
 ---
 
 **Subject:** Still putting up with slow sites and slow support?
-**Preview:** 30 days to explore everything. No commitment needed.
+**Preview:** Ranked #1 on G2. 30 days to see why.
 
 ---
 
