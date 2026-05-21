@@ -12,13 +12,13 @@
 
 Hi [First name],
 
-We recently published the AI & Bot Traffic Report, based on an analysis of 10 billion requests across our WordPress hosting infrastructure, to understand what's changed with automated traffic and what it means for sites like yours.
+1 in 31 visits to the average website is now an AI bot. A year ago it was 1 in 200.
 
-If you want to get into the data, what it means in practice, and what to do about it, we're going live to walk through it.
+Our AI & Bot Traffic Report digs into what's behind that shift, what it means for performance and costs, and how to manage it.
 
-→ Join us on [date and time] with [speakers], with Q&A at the end.
+If you want to go deeper on the data and walk away knowing what to do about it, join us live.
 
-We'll cover why most problematic bot behavior isn't malicious (and why that still doesn't make it harmless), the performance and cost trade-offs most teams skip over, and what's ahead as agentic traffic enters the picture.
+→ [Date and time], with [speakers], Q&A at the end.
 
 Can't make it live? Register anyway and we'll send you the recording.
 

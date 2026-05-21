@@ -6,7 +6,7 @@
 
 **Subject:** 1 in 31 visits to your site is now an AI bot
 
-**Preview text:** Some bots help. Most just add costs you can't see.
+**Preview text:** A year ago it was 1 in 200. Here's what that shift is costing.
 
 ---
 
@@ -14,7 +14,7 @@ Hi [First name],
 
 1 in 31 visits to your site is now an AI bot. A year ago, that number was 1 in 200.
 
-And these aren't the well-behaved crawlers you're used to. They're hitting pages that require server work, getting trapped in query-string loops, and adding costs that don't show up until your bill does.
+And these aren't the well-behaved crawlers you're used to. They bypass cache, hit pages that require real server work, and add costs your analytics won't show you.
 
 We analyzed 10 billion requests across our WordPress hosting infrastructure to understand what changed.
 
