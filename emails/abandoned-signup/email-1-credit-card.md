@@ -6,6 +6,7 @@
 ---
 
 **Subject:** 1 in 4 Kinsta customers signed up just to look around 👀
+**Preview:** 30 days to explore everything. No commitment needed.
 
 ---
 
@@ -15,12 +16,12 @@ Most people find Kinsta when they're tired of slow sites, unreliable uptime, or 
 
 Here's what you're joining: Kinsta is #1 out of 388 WordPress hosting providers on G2, based on real customer reviews.
 
-And finishing the form doesn't lock you in:
+Finishing the form doesn't lock you in:
 
 ✅ 30 days of full access, with every feature included
 ✅ Not the right fit? Cancel before day 30 and pay nothing
 ✅ Still undecided? 30-day money-back guarantee on month two
-✅ A WordPress expert in the live chat from day one
+✅ Chat with a WordPress expert from day one
 
 [ Complete Your Signup ]
 

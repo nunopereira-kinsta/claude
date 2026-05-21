@@ -6,6 +6,7 @@
 ---
 
 **Subject:** Your site stays live. We handle the move. 🔄
+**Preview:** We don't touch your live site until you say so.
 
 ---
 

@@ -6,6 +6,7 @@
 ---
 
 **Subject:** Kinsta costs more. Here's Andrew's take. 🏆
+**Preview:** His site was down 30% of the time. Then he switched.
 
 ---
 
@@ -17,7 +18,7 @@ Andrew Geraci, founder of Project Preservation, a photography and film studio, f
 
 "The price of Kinsta was a bit of a sticker shock when I first saw it and made me slightly apprehensive at first."
 
-Before switching, his previous host had the site down up to 30% of each month, costing thousands in lost SEO rankings over 7 years. After moving to Kinsta, load times dropped from 5-7 seconds to under 2.
+Before switching, his previous host had the site down up to 30% of each month, costing him thousands in lost rankings over 7 years. After moving to Kinsta, load times dropped from 5-7 seconds to under 2.
 
 "(Price) quickly faded... It's worth every penny."
 
