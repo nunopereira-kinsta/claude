@@ -4,14 +4,14 @@ Read this before writing any Kinsta marketing email. If anything is unclear or m
 
 ---
 
-## Before You Start — Ask Every Time
+## Before You Start: Ask Every Time
 
 Before writing, confirm all of the following:
 
 - Who is the audience? (cold prospect, warm lead, trial churner, existing customer, specific segment like AU/NZ)
 - What is the goal? (drive signup, promote content, win-back, upsell, event registration)
 - What format? (HTML marketing email with CTA button, or plain text personal email)
-- Who is the sender? (named SDR, marketing team, senior person — this affects tone)
+- Who is the sender? (named SDR, marketing team, senior person, as this affects tone)
 - What is the primary CTA, and where does it link?
 - Is this standalone or part of a sequence? If a sequence, which position?
 - Is there a specific offer, deadline, or urgency element?
@@ -22,32 +22,32 @@ Before writing, confirm all of the following:
 
 ## Email Structure
 
-- **Subject line**: under 50 characters ideally, no final dot, compelling and accurately represents the body — never misleading
+- **Subject line**: under 50 characters ideally, no final dot, compelling and accurately represents the body, never misleading
 - **Preview text**: complements the subject, never repeats it, specific
-- **Body**: ~100–130 words, short paragraphs (max 2–3 sentences each), consistent paragraph lengths for mobile readability
-- **CTA**: one primary CTA per email — button for HTML, reply for plain text. Pick one CTA verb and use it consistently throughout
-- **P.S.**: optional, used for a secondary action or useful context — never repeat what the body already said
+- **Body**: around 100 to 130 words, short paragraphs (max 2 to 3 sentences each), consistent paragraph lengths for mobile readability
+- **CTA**: one primary CTA per email. Button for HTML, reply for plain text. Pick one CTA verb and use it consistently throughout
+- **P.S.**: optional, used for a secondary action or useful context. Never repeat what the body already said
 
 ---
 
 ## Writing Style Rules
 
-- No em dashes (—)
-- No semicolons (;)
+- No em dashes
+- No semicolons
 - No final dots on subject lines
 - Short sentences preferred over long compound ones
-- Plain English — no jargon, no marketing speak
+- Plain English. No jargon, no marketing speak
 - Never start a paragraph with "And" as a weak connector
 - Active voice over passive
-- Read every email aloud before finalising — if anything sounds unnatural or like it was written by a machine, rewrite it
+- Read every email aloud before finalising. If anything sounds unnatural or like it was written by a machine, rewrite it
 
 ---
 
 ## Tone and Voice
 
 - Direct but not aggressive
-- Honest — never oversell, never make unverified claims
-- Conversational — like a smart colleague, not a brochure
+- Honest. Never oversell, never make unverified claims
+- Conversational, like a smart colleague, not a brochure
 - Reads naturally when spoken aloud
 - No hype words ("incredible," "revolutionary," "game-changing")
 - Empathy without guilt or manipulation
@@ -56,7 +56,7 @@ Before writing, confirm all of the following:
 
 ## What to Avoid
 
-**Spam filter triggers — never use:**
+**Spam filter triggers, never use:**
 - "free" → use "at no cost" or "included"
 - "guarantee" → describe the policy factually
 - "risk-free"
@@ -68,7 +68,7 @@ Before writing, confirm all of the following:
 - "100%"
 
 **Other banned phrases:**
-- "managed WordPress hosting" — trademark issue. Use "managed hosting for WordPress"
+- "managed WordPress hosting", a trademark issue. Use "managed hosting for WordPress"
 - "Kinsta expert" → use "WordPress expert"
 - Vague unverifiable claims ("industry-leading," "best-in-class")
 
@@ -76,9 +76,9 @@ Before writing, confirm all of the following:
 
 ## Feature Descriptions
 
-Always lead with the benefit, not the technical description. A few examples — this is not a complete list. New features should be framed the same way.
+Always lead with the benefit, not the technical description. A few examples below. This is not a complete list, and new features should be framed the same way.
 
-- **Bot Protection** *(example)*: "Stops AI crawlers from draining performance and bandwidth — managed from MyKinsta with preset protection levels"
+- **Bot Protection** *(example)*: "Stops AI crawlers from draining performance and bandwidth, managed from MyKinsta with preset protection levels"
 - **File Manager** *(example)*: "Manage WordPress files directly in the dashboard, no SFTP or SSH needed"
 - **PHP Performance add-on** *(example)*: "Scale PHP threads and memory on demand during traffic spikes, without upgrading your plan"
 
@@ -88,11 +88,11 @@ For features not listed here: research kinsta.com, lead with what it does for th
 
 ## Email Sequence Rules
 
-- Each email in a sequence must feel structurally different — not all bullets, not all narrative
+- Each email in a sequence must feel structurally different. Not all bullets, not all narrative
 - Subject lines across a sequence should not sound similar to each other
 - CTA copy should vary across sequence emails
 - Never repeat the same value claim in two emails in the same sequence
-- Escalating urgency is fine; guilt-tripping is not
+- Escalating urgency is fine. Guilt-tripping is not
 
 ---
 
@@ -101,7 +101,7 @@ For features not listed here: research kinsta.com, lead with what it does for th
 **HTML marketing emails:**
 - One CTA button per email with an actionable verb
 - Short, scannable, built for mobile
-- Emoji allowed — max 1 per email, in the body only (not the subject line)
+- Emoji allowed, max 1 per email, in the body only (not the subject line)
 - Sender can be a team alias or a named person
 
 **Plain text personal emails:**
@@ -113,11 +113,11 @@ For features not listed here: research kinsta.com, lead with what it does for th
 
 ## Reference Examples
 
-Two examples for length and tone calibration. Do not copy the structure — use as a feel reference only.
+Two examples for length and tone calibration. Do not copy the structure, use as a feel reference only.
 
 ---
 
-**Example A — HTML marketing email (numbered list format)**
+**Example A: HTML marketing email (numbered list format)**
 
 Subject: Your site stays live. We handle the move. 🔄
 Preview: We don't touch your live site until you say so.
@@ -142,7 +142,7 @@ P.S. Questions about your setup? Our team is in the live chat and can help befor
 
 ---
 
-**Example B — Plain text personal email**
+**Example B: Plain text personal email**
 
 Subject: Pay for 6 months. Get a full year
 
