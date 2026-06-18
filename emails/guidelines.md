@@ -148,8 +148,6 @@ Subject: Pay for 6 months. Get a full year
 
 Hi {first_name},
 
-I wanted to reach out personally before we lose touch.
-
 You gave Kinsta a try and it didn't quite stick. If you're open to sharing what got in the way, I'd genuinely like to hear it.
 
 Here's what I'd like to offer: a full 12-month Kinsta plan for the price of 6. Half the annual cost, all the same features, for the full year.
